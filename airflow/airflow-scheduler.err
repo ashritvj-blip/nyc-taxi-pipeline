@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/sumedhatvns/dbt-env/bin/airflow", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 52, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/utils/cli.py", line 112, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 72, in scheduler
+    _run_scheduler_job(job_runner, skip_serve_logs=args.skip_serve_logs)
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 41, in _run_scheduler_job
+    with _serve_logs(skip_serve_logs), _serve_health_check(enable_health_check):
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 83, in _serve_logs
+    from airflow.utils.serve_logs import serve_logs
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/airflow/utils/serve_logs.py", line 25, in <module>
+    import gunicorn.app.base
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/gunicorn/app/base.py", line 11, in <module>
+    from gunicorn import util
+  File "/Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/gunicorn/util.py", line 25, in <module>
+    import pkg_resources
+ModuleNotFoundError: No module named 'pkg_resources'

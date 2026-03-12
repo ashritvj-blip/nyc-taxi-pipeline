@@ -1,0 +1,31 @@
+[0m14:26:24.147357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109586010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109609bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10960a190>]}
+
+
+============================== 14:26:24.151285 | 10fb77f1-e33a-41d4-b106-63e319e4ef66 ==============================
+[0m14:26:24.151285 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:26:24.151786 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'partial_parse': 'True', 'debug': 'False', 'log_format': 'default', 'log_path': 'logs', 'invocation_command': 'dbt init dbt_project', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'static_parser': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/Users/sumedhatvns/.dbt', 'target_path': 'None', 'empty': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'quiet': 'False'}
+[0m14:26:24.164864 [info ] [MainThread]: Creating dbt configuration folder at /Users/sumedhatvns/.dbt
+[0m14:26:24.166160 [debug] [MainThread]: Starter project path: /Users/sumedhatvns/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:26:24.173299 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:26:24.173741 [info ] [MainThread]: Setting up your profile.
+[0m14:26:31.095767 [info ] [MainThread]: Profile dbt_project written to /Users/sumedhatvns/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m14:26:31.521345 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 7.434965, "process_in_blocks": "0", "process_kernel_time": 0.283313, "process_mem_max_rss": "116097024", "process_out_blocks": "0", "process_user_time": 1.106061}
+[0m14:26:31.522476 [debug] [MainThread]: Command `dbt init` succeeded at 14:26:31.522283 after 7.44 seconds
+[0m14:26:31.523216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109609e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109594310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096e2850>]}
+[0m14:26:31.523796 [debug] [MainThread]: Flushing usage events
+[0m14:26:31.925460 [debug] [MainThread]: An error was encountered while trying to flush usage events
